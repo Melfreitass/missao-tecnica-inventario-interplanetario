@@ -132,3 +132,9 @@ console.log(`\nInventário Beta (10 primeiros itens): ${inventarioBeta.slice(0, 
 let novaLista = inventarioBeta.slice(0, 5);
 console.log(`\n5 primeiros itens da lista Beta:`);
 console.table(novaLista);
+
+
+//14. Separa últimos 10 itens do Alpha
+let novaListaAlpha = inventarioAlpha.slice(17, 27);
+console.log(`\n10 últimos itens da lista Alpha:`);
+console.table(novaListaAlpha);
