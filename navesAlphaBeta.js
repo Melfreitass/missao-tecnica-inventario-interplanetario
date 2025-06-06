@@ -125,5 +125,10 @@ console.table(inventarioBeta);
 
 
 //12. Transformando lista em string
-console.log(`Inventário Beta (10 primeiros itens): ${inventarioBeta.slice(0, 10)}`);
+console.log(`\nInventário Beta (10 primeiros itens): ${inventarioBeta.slice(0, 10)}`);
 
+
+//13. Gera nova lista com 5 primeiros itens da Beta
+let novaLista = inventarioBeta.slice(0, 5);
+console.log(`\n5 primeiros itens da lista Beta:`);
+console.table(novaLista);
