@@ -145,3 +145,9 @@ let substituiItemAlpha = inventarioAlpha.splice(5, 1, ["Novo Fóssil Estelar", "
 console.log('\nInventário Alpha com o item 5 substituído:')
 console.table(inventarioAlpha);
 
+
+//16. Removendo itens do Beta
+let removerItemBeta = inventarioBeta.splice(11, 2);
+console.log('\nInventário Beta com o item 5 substituído:')
+console.table(inventarioBeta);
+
