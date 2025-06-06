@@ -57,3 +57,13 @@ let inventarioAlpha = [
     ["Terminal de Dobra", "Alpha Centauri", 10500]
   ];
 
+  console.log("Inventário Alpha:");
+  console.table(inventarioAlpha);
+  console.log(`Inventário Beta:`);
+  console.table(inventarioBeta);
+
+// 1. Removendo o último item da lista Alpha
+removeUltimoItem = inventarioAlpha.pop();
+console.log(`\nInventário Alpha com último item removido:`);
+console.table(inventarioAlpha);
+
