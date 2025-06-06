@@ -80,3 +80,11 @@ inventarioAlpha.push(
 );
 console.log(`\nInventário Alpha com novos itens no final:`);
 console.table(inventarioAlpha);
+
+//4. Adicionando novos itens no final da lista Beta
+inventarioBeta.push(
+    ["Telescópio Espacial", "Kleper", 4560],
+    ["Objeto não identificado", "Kleper", 3000],
+);
+console.log(`Inventário Beta com novos itens no final:`);
+console.table(inventarioBeta);
