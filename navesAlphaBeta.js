@@ -148,7 +148,7 @@ console.table(inventarioAlpha);
 
 //16. Removendo itens do Beta
 let removerItemBeta = inventarioBeta.splice(11, 2);
-console.log('\nInventário Beta com o item 5 substituído:')
+console.log('\nInventário Beta com dois itens removidos substituído:')
 console.table(inventarioBeta);
 
 
@@ -156,3 +156,12 @@ console.table(inventarioBeta);
 inventarioUnificado =  inventarioAlpha.concat(inventarioBeta);
 console.log(`\nInventários Unificados:`);
 console.table(inventarioUnificado);
+
+
+//18. Juntando parte dos itens de cada array
+let cincoItensAlpha = inventarioAlpha.slice(0, 5);
+let cincoItensBeta = inventarioBeta.slice(0, 5);
+
+let inventariosJuntos = cincoItensAlpha.concat(cincoItensBeta);
+console.log(`\nListas juntas`);
+console.table(inventariosJuntos);
