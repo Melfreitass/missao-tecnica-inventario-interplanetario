@@ -151,3 +151,8 @@ let removerItemBeta = inventarioBeta.splice(11, 2);
 console.log('\nInventário Beta com o item 5 substituído:')
 console.table(inventarioBeta);
 
+
+//17. Juntando os arrays
+inventarioUnificado =  inventarioAlpha.concat(inventarioBeta);
+console.log(`\nInventários Unificados:`);
+console.table(inventarioUnificado);
