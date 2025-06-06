@@ -62,15 +62,18 @@ let inventarioAlpha = [
   console.log(`Inventário Beta:`);
   console.table(inventarioBeta);
 
+
 // 1. Removendo o último item da lista Alpha
 let removeUltimoItemAlpha = inventarioAlpha.pop();
 console.log(`\nInventário Alpha com último item removido:`);
 console.table(inventarioAlpha);
 
+
 //2. Removendo o último item da lista Beta
 let removeUltimoItemBeta = inventarioBeta.pop();
 console.log(`Inventário Beta com último item removido:`);
 console.table(inventarioBeta);
+
 
 //3. Adicionando novos itens no final da lista Alpha
 inventarioAlpha.push(
@@ -81,6 +84,7 @@ inventarioAlpha.push(
 console.log(`\nInventário Alpha com novos itens no final:`);
 console.table(inventarioAlpha);
 
+
 //4. Adicionando novos itens no final da lista Beta
 inventarioBeta.push(
     ["Telescópio Espacial", "Kleper", 4560],
@@ -89,6 +93,7 @@ inventarioBeta.push(
 console.log(`Inventário Beta com novos itens no final:`);
 console.table(inventarioBeta);
 
+
 //5. Movendo um item para o topo da lista Alpha
 let itemMovido = inventarioAlpha[3];
 inventarioAlpha.unshift(itemMovido);
@@ -96,3 +101,12 @@ let removeItem = inventarioAlpha.splice(4, 1);
 
 console.log(`\nInventário Alpha com o item 'Minério dourado' no início:`);
 console.table(inventarioAlpha);
+
+
+//6. Movendo um item para o topo da lista Beta
+let itemMovidoBeta = inventarioBeta[10];
+inventarioBeta.unshift(itemMovidoBeta);
+let removeItemBeta = inventarioBeta.splice(11, 1);
+
+console.log(`Inventário Beta com o item 'Lanterna Estelar' no início:`);
+console.table(inventarioBeta);
