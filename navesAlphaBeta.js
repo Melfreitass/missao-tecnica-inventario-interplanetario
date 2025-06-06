@@ -110,3 +110,8 @@ let removeItemBeta = inventarioBeta.splice(11, 1);
 
 console.log(`Inventário Beta com o item 'Lanterna Estelar' no início:`);
 console.table(inventarioBeta);
+
+//7. Remove primeiro item da lista Alpha
+let removePrimeiroItemAlpha = inventarioAlpha.shift();
+console.log(`\nInventário Alpha com o primeiro item romovido:`);
+console.table(inventarioAlpha);
