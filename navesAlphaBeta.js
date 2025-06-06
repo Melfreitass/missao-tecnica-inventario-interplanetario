@@ -71,3 +71,12 @@ console.table(inventarioAlpha);
 let removeUltimoItemBeta = inventarioBeta.pop();
 console.log(`Inventário Beta com último item removido:`);
 console.table(inventarioBeta);
+
+//3. Adicionando novos itens no final da lista Alpha
+inventarioAlpha.push(
+    ["Moeada Antiga", "Terra", 5000],
+    ["Fósseis", "Terra", 6200],
+    ["Pedra de Ouro", "Terra", 9999],
+);
+console.log(`\nInventário Alpha com novos itens no final:`);
+console.table(inventarioAlpha);
