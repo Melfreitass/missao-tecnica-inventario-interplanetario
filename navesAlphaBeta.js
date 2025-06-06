@@ -88,3 +88,11 @@ inventarioBeta.push(
 );
 console.log(`Inventário Beta com novos itens no final:`);
 console.table(inventarioBeta);
+
+//5. Movendo um item para o topo da lista Alpha
+let itemMovido = inventarioAlpha[3];
+inventarioAlpha.unshift(itemMovido);
+let removeItem = inventarioAlpha.splice(4, 1);
+
+console.log(`\nInventário Alpha com o item 'Minério dourado' no início:`);
+console.table(inventarioAlpha);
