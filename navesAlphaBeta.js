@@ -153,7 +153,7 @@ console.table(inventarioBeta);
 
 
 //17. Juntando os arrays
-inventarioUnificado =  inventarioAlpha.concat(inventarioBeta);
+let inventarioUnificado =  inventarioAlpha.concat(inventarioBeta);
 console.log(`\nInventários Unificados:`);
 console.table(inventarioUnificado);
 
@@ -163,5 +163,15 @@ let cincoItensAlpha = inventarioAlpha.slice(0, 5);
 let cincoItensBeta = inventarioBeta.slice(0, 5);
 
 let inventariosJuntos = cincoItensAlpha.concat(cincoItensBeta);
-console.log(`\nListas juntas`);
+console.log(`\nListas juntas:`);
 console.table(inventariosJuntos);
+
+
+//26. Invertendo ordem de itend Alpha
+let quinzePrimeirosItens = inventarioAlpha.slice(0,15);
+let itensInvertidos = quinzePrimeirosItens.reverse();
+let outrosItens = inventarioAlpha.slice(15, 27);
+
+let listaFinal = itensInvertidos.concat(outrosItens);
+console.log("Alpha com 15 primeiros itens invertidos:")
+console.table(listaFinal);
