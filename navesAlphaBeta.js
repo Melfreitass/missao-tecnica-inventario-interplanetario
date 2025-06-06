@@ -138,3 +138,10 @@ console.table(novaLista);
 let novaListaAlpha = inventarioAlpha.slice(17, 27);
 console.log(`\n10 últimos itens da lista Alpha:`);
 console.table(novaListaAlpha);
+
+
+//15. Substituindo item do Alpha
+let substituiItemAlpha = inventarioAlpha.splice(5, 1, ["Novo Fóssil Estelar", "Lua", 92000]);
+console.log('\nInventário Alpha com o item 5 substituído:')
+console.table(inventarioAlpha);
+
