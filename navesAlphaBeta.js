@@ -63,7 +63,11 @@ let inventarioAlpha = [
   console.table(inventarioBeta);
 
 // 1. Removendo o último item da lista Alpha
-removeUltimoItem = inventarioAlpha.pop();
+let removeUltimoItemAlpha = inventarioAlpha.pop();
 console.log(`\nInventário Alpha com último item removido:`);
 console.table(inventarioAlpha);
 
+//2. Removendo o último item da lista Beta
+let removeUltimoItemBeta = inventarioBeta.pop();
+console.log(`Inventário Beta com último item removido:`);
+console.table(inventarioBeta);
